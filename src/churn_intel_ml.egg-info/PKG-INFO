@@ -1,0 +1,114 @@
+Metadata-Version: 2.4
+Name: churn-intel-ml
+Version: 0.1.0
+Summary: Production-style customer churn ML project for resume impact
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.111.0
+Requires-Dist: uvicorn>=0.30.0
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: joblib>=1.4.0
+Requires-Dist: streamlit>=1.36.0
+
+# Churn Intelligence Platform (Resume-Ready ML Project)
+
+An end-to-end machine learning project that predicts customer churn and deploys predictions through a production-style API and dashboard.
+
+## Why this stands out on a resume
+
+- Framed as a real business problem (retention and revenue protection).
+- Includes reproducible training, model selection, evaluation, and artifact versioning.
+- Ships with a FastAPI inference service and a Streamlit analytics dashboard.
+- Has automated tests for core ML behavior.
+
+## Tech stack
+
+- Python, scikit-learn, pandas, numpy
+- FastAPI + Uvicorn (serving)
+- Streamlit (analytics UI)
+- Pytest (tests)
+
+## Project structure
+
+```
+ML_Project/
+  app/
+    main.py
+  dashboard/
+    app.py
+  src/churnintel/
+    __init__.py
+    data.py
+    modeling.py
+    train.py
+    inference.py
+  tests/
+    test_modeling.py
+  requirements.txt
+  pyproject.toml
+  README.md
+```
+
+## Quick start
+
+1. Create and activate a virtual environment.
+2. Install dependencies.
+3. Train the model.
+4. Run API and dashboard.
+
+### Install
+
+```powershell
+pip install -r requirements.txt
+pip install -e .
+```
+
+### Train
+
+```powershell
+python -m churnintel.train --n-samples 8000
+```
+
+This creates artifacts in `artifacts/`:
+
+- `model.joblib`
+- `metrics.json`
+- `leaderboard.csv`
+- `feature_importance.csv`
+
+### Run API
+
+```powershell
+uvicorn app.main:app --reload
+```
+
+Open docs: http://127.0.0.1:8000/docs
+
+### Run dashboard
+
+```powershell
+streamlit run dashboard/app.py
+```
+
+## Example prediction payload
+
+```json
+{
+  "age": 38,
+  "monthly_spend": 79.0,
+  "tenure_months": 14,
+  "support_tickets_90d": 4,
+  "login_days_30d": 9,
+  "contract_type": "month-to-month",
+  "payment_method": "electronic-check",
+  "region": "north"
+}
+```
+
+## Resume bullets you can use
+
+- Built an end-to-end churn prediction system (data generation, feature engineering, model selection, deployment) using Python, scikit-learn, and FastAPI.
+- Implemented cross-validated model selection and evaluation pipeline, tracking ROC-AUC/F1 and feature importance for explainability.
+- Deployed real-time inference API and interactive Streamlit dashboard, enabling business users to triage high-risk customers.

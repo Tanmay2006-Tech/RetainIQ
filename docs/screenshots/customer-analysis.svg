@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0f182b"/>
+  <rect x="70" y="120" width="520" height="520" rx="18" fill="#1a2742"/>
+  <rect x="630" y="120" width="580" height="250" rx="18" fill="#22375f"/>
+  <rect x="630" y="390" width="580" height="250" rx="18" fill="#1a2f50"/>
+  <text x="90" y="95" fill="#ccf0ff" font-size="38" font-family="Segoe UI">Customer Analysis</text>
+</svg>

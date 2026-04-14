@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0c1424"/>
+  <rect x="60" y="120" width="360" height="180" rx="18" fill="#1a2b49"/>
+  <rect x="460" y="120" width="360" height="180" rx="18" fill="#213760"/>
+  <rect x="860" y="120" width="360" height="180" rx="18" fill="#1e3156"/>
+  <text x="80" y="90" fill="#b9e8ff" font-size="40" font-family="Segoe UI">Overview Dashboard</text>
+</svg>

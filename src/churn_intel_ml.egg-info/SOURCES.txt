@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/churn_intel_ml.egg-info/PKG-INFO
+src/churn_intel_ml.egg-info/SOURCES.txt
+src/churn_intel_ml.egg-info/dependency_links.txt
+src/churn_intel_ml.egg-info/requires.txt
+src/churn_intel_ml.egg-info/top_level.txt
+src/churnintel/__init__.py
+src/churnintel/data.py
+src/churnintel/inference.py
+src/churnintel/modeling.py
+src/churnintel/train.py
+tests/test_modeling.py
